@@ -22,8 +22,9 @@ public class Guerrier extends Personnage {
     public Guerrier(String name){
         super(name);
         type = GUERRIER;
-        setHP(5); // Sets default health points for a warrior
-        setStrength(5); // Sets default strength points for a warrior
+        healthPoints = 5; // Sets default health points for a warrior
+        strengthPoints = 5; // Sets default strength points for a warrior
+        totalStrength = 5;
         offensiveEquipment = new Arme(); // Assigns offensive equipment
         defensiveEquipment = new Bouclier(); // Assigns defensive equipment
     }

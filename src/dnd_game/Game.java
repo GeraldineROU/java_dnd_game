@@ -227,7 +227,7 @@ public class Game {
      * @param enemy the enemy that the player is fighting.
      */
     private void letTheFightBegin(Ennemi enemy) {
-        menu.displayPlayerAttack(player.getName(), enemy.getName(), player.getStrength());
+        menu.displayPlayerAttack(player.getName(), enemy.getName(), player.getTotalStrength());
         int playerDamage = enemy.attackPlayer(player);
 
         if (enemy.isDead()) {

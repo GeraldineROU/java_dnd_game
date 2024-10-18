@@ -19,8 +19,9 @@ public class Pangolin extends Personnage {
     public Pangolin(String name){
         super(name);
         type = PANGOLIN;
-        setHP(1);
-        setStrength(1);
+        healthPoints = 1;
+        strengthPoints = 1;
+        totalStrength = 1;
         this.offensiveEquipment = new Caillou();
         this.defensiveEquipment = new SlipSale();
     }

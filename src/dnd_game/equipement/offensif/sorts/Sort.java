@@ -38,7 +38,8 @@ public class Sort extends EquipementOffensif implements Case {
     @Override
     public void interaction(Personnage player) {
         if (player instanceof Magicien) {
-            player.setTotalStrength(strengthBonus);
+            int newTotalStrength = player.getTotalStrength() + strengthBonus;
+            player.setTotalStrength(newTotalStrength);
         }
     }
 }

@@ -40,7 +40,8 @@ public class Arme extends EquipementOffensif implements Case {
     @Override
     public void interaction(Personnage player) {
         if (player instanceof Guerrier || !isAlreadyEquippedByPlayer(player)) {
-            player.setTotalStrength(strengthBonus);
+            int newTotalStrength = player.getTotalStrength() + strengthBonus;
+            player.setTotalStrength(newTotalStrength);
         }
     }
 }

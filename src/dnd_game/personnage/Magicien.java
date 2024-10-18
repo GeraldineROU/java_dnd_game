@@ -23,8 +23,9 @@ public class Magicien extends Personnage {
     public Magicien(String name) {
         super(name);
         type = MAGICIEN;
-        setHP(3); // Sets default health points for a magician
-        setStrength(8); // Sets default strength points for a magician
+        healthPoints = 3; // Sets default health points for a magician
+        strengthPoints = 8; // Sets default strength points for a magician
+        totalStrength = 8;
         offensiveEquipment = new Sort(); // Assigns offensive magical equipment
         defensiveEquipment = new Philtre(); // Assigns defensive magical equipment
     }

@@ -157,8 +157,8 @@ public class Menu {
                 "\n----- Fin de la partie ------" );
     }
 
-    public void displayPlayerAttack(String playerName, String enemyName, int playerStrength) {
-        System.out.println(playerName + " attaque " + enemyName + " qui subit " + playerStrength + " points de dégat.");
+    public void displayPlayerAttack(String playerName, String enemyName, int playerTotalStrength) {
+        System.out.println(playerName + " attaque " + enemyName + " qui subit " + playerTotalStrength + " points de dégat.");
     }
 
     public void displayPlayerHP(int playerHP, String playerName) {

@@ -128,7 +128,7 @@ public abstract class Personnage {
     }
 
     public void setTotalStrength(int strengthBonus) {
-        totalStrength = strengthPoints + strengthBonus;
+        totalStrength = strengthBonus;
     }
 
     public int getTotalStrength() {
